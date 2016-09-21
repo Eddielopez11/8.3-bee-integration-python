@@ -1,8 +1,14 @@
-from bottle import route, run, static_file
+from bottle import route, run, static_file, get
 
 @route('/')
 def skaters():
     return '''
+    <head>
+    <meta charset="utf-8">
+    <title>summer16-1.4-css</title>
+    <link rel="stylesheet" href="static/main.css">
+  </head>
+  <body>
     <div class="body">
       <header>
 
@@ -16,13 +22,13 @@ def skaters():
               <img class="nav__facebook" src="http://www.freeiconspng.com/uploads/facebook-f-logo-png-home-find-us-on-facebook-25.png" alt="Facebook logo" />
             </a>
             <a href="#rssFeed">
-              <img  class="nav__rssFeed" src="http://www.iconsdb.com/icons/download/white/rss-512.png" alt="RSS FEED logo" />
+              <img  class="nav__rssFeed" src="http://www.freeiconspng.com/uploads/rss-logo-icon-png-4.png" alt="RSS FEED logo" />
             </a>
             <a href="#twitter">
               <img  class="nav__twitter" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" alt="Twitter logo" />
             </a>
             <a href="#youtube">
-              <img  class="nav__youtube" src="http://www.iconsdb.com/icons/preview/white/youtube-xxl.png" alt="Youtube logo" />
+              <img  class="nav__youtube" src="http://2012.igem.org/wiki/images/e/ea/Youtube-logo-2.png" alt="Youtube logo" />
             </a>
           </div>
         </nav>
@@ -161,13 +167,13 @@ def skaters():
             <img class="contact__facebook" src="http://www.freeiconspng.com/uploads/facebook-f-logo-png-home-find-us-on-facebook-25.png" alt="Facebook logo" />
           </a>
           <a href="#rssFeed">
-            <img class="contact__rssFeed" src="http://www.iconsdb.com/icons/download/white/rss-512.png" />
+            <img class="contact__rssFeed" src="http://www.freeiconspng.com/uploads/rss-logo-icon-png-4.png" />
           </a>
           <a href="#twitter">
             <img class="contact__twitter" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" alt="Twitter logo" />
           </a>
           <a href="#youtube">
-            <img class="contact__youtube" src="http://www.iconsdb.com/icons/preview/white/youtube-xxl.png" />
+            <img class="contact__youtube" src="http://2012.igem.org/wiki/images/e/ea/Youtube-logo-2.png" />
           </a>
         </div>
         <div class="contact__rightAlign">
@@ -180,6 +186,17 @@ def skaters():
         </div>
       </footer>
     </div>
+  </body>
     '''
+
+@get('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='./static')
+
+@get('/assets/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='./assets')
+
+
 
 run(host='localhost', port=8080, debug=True)
