@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+/* main css */
+
+/* saw this in codeacademy.com on css tut, seems to be working */
+body {
+  padding: 0;
+  background-image: url("../assets/bg.jpg");
+}
+
+.body {
+  margin: auto;
+  width: 700px;
+}
+
+/* Social Media Navigation */
+.container {
+  position: relative;
+}
+
+.nav__socialMediaMain {
+  display: inline-block;
+}
+
+.nav__subscribe {
+  margin-left: 315px;
+  padding: 5px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav__facebook {
+  margin-left: 50px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  width: 50px;
+  height: 53px;
+  opacity: .6;
+  background-color: rgb(67,	87,	150);
+  border-bottom: 3px solid grey;
+}
+
+.nav__rssFeed {
+  margin: auto 5px;
+  padding: 13px 13px;
+  width: 50px;
+  height: 53px;
+  opacity: .6;
+  background-color: rgb(203, 142, 50);
+  border-bottom: 3px solid grey;
+}
+
+.nav__twitter {
+  margin: auto 5px;
+  padding: 12px 12px;
+  width: 50px;
+  height: 53px;
+  opacity: .6;
+  background-color: rgb(106,	140,	198);
+  border-bottom: 3px solid grey;
+}
+
+.nav__youtube {
+  margin: auto auto auto 5px;
+  padding: 10px;
+  width: 50px;
+  height: 53px;
+  opacity: .6;
+  background-color: rgb(177,	56,	45);
+  border-bottom: 3px solid grey;
+}
+/* Navigation bar */
+.nav__bar {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.nav__bar--color {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  background-color: rgb(177, 43, 50);
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid grey;
+}
+
+/* carousel image */
+.main__image--resize {
+  margin: 0 0 15px 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.main__image--div {
+  position: relative;
+}
+
+.main__image--grid {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  padding-bottom: 20px;
+  object-fit: cover;
+  opacity: .6;
+  width: 100%;
+  height: 100%;
+}
+
+.main__image--logo {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 40%;
+  height: 70%;
+
+/*
+  Grid css
+*/
+}
+.grid__row {
+  font-size: 0;
+  background: white;
+}
+
+.grid__column {
+  display: inline-block;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  /*background: rgb(251	251	251);*/
+  width: 33.33%;
+}
+
+.article__readMore {
+  margin: 0 55px;
+  text-align: center;
+  color: rgb(177, 43, 50);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* skateboarders pictures with names over them */
+
+.sk8er__div--align {
+  display: inline-block;
+  margin: auto;
+}
+
+.sk8er__resize--topLeft {
+  display: inline-block;
+  margin: auto;
+  width: 230px;
+  height: 150px;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sk8er__resize--topMid {
+  display: inline-block;
+  margin: auto;
+  width: 230px;
+  height: 150px;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sk8er__resize--topRight {
+  display: inline-block;
+  margin: auto;
+  width: 232px;
+  height: 300px;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: right;
+}
+
+.sk8er__resize--bottomLeft {
+  display: inline-block;
+  margin: auto;
+  width: 463px;
+  height: 150px;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact__div--names {
+  display: inline-block;
+  position: relative;
+}
+
+.sk8er__names {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* skateboard pictures allignment */
+
+.sk8boards__color {
+  background: white;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sk8boards__alignWithin {
+  padding: 0 10px;
+  width: 63px;
+  height: 165px;
+}
+
+
+/* Contact info styling */
+
+.contact__color {
+  background: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact__leftAlign {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+
+.contact__rightAlign {
+  display: inline-block;
+  width: 45%;
+}
+
+.contact__facebook {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(79,	79,	79);
+  opacity: .5;
+}
+
+.contact__rssFeed {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(174,	174,	174);
+  opacity: .5;
+}
+
+.contact__twitter {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(122,	122,	122);
+  opacity: .5;
+}
+
+.contact__youtube {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(117,	117,	117);
+  opacity: .5;
+}
+
+.contact__inputName {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 3px solid grey;
+  width: 100%;
+  height: 30px;
+  margin: 8px 0 8px 30px;
+  padding-left: 10px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.contact__inputEmail {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 3px solid grey;
+  width: 100%;
+  height: 30px;
+  margin: 0 0 8px 30px;
+  padding-left: 10px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.contact__inputTextArea {
+  border-top: 3px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 3px solid grey;
+  width: 100%;
+  margin: 0 0 8px 30px;
+}
+
+.contact__submit {
+  margin: 0 0 0 200px;
+  background: rgb(177, 43, 50);
+  padding: 5px 50px;
+  border: none;
+  color: white;
+}

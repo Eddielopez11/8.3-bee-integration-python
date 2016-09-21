@@ -1,4 +1,4 @@
-from bottle import route, run
+from bottle import route, run, static_file
 
 @route('/')
 def skaters():
